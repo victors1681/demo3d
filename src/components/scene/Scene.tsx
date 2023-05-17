@@ -70,7 +70,6 @@ export const Scene = ({ canvasRef }: SceneProps) =>  {
     if (found) {
       // Gets model ID
       model.id = found.object.modelID;
-      console.log(found.object);
 
       // Gets Express ID
       const index = found.faceIndex;
