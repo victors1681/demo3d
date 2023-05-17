@@ -95,7 +95,7 @@ export const Dashboard: React.FC<{children: React.ReactNode}> = ({ children }) =
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Box sx={{display:"flex"}}>
+      <div style={{display:"flex"}}>
         <CssBaseline />
         <AppBar position="absolute" open={open} elevation={0}>
           <Toolbar
@@ -157,12 +157,12 @@ export const Dashboard: React.FC<{children: React.ReactNode}> = ({ children }) =
         >
           <Toolbar />
           <Divider />
-          <Box sx={{ height: "100vh" }}>
+          <div style={{ height: "100vh" }}>
             {children}
             <Copyright sx={{ pt: 4 }} />
-          </Box>
+          </div>
         </Box>
-      </Box>
+      </div>
     </ThemeProvider>
   );
 }
