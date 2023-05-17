@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useThree } from "@react-three/fiber";
-import "./App.css";
 import { IFCLoader } from "web-ifc-three/IFCLoader"; 
 import {
   acceleratedRaycast,
