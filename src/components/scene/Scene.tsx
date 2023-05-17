@@ -34,7 +34,7 @@ export const Scene = ({ canvasRef }: SceneProps) =>  {
   const state = useMemo(() => get(), [get]);
 
   const cast = useCallback(
-    (event: MouseEvent, ifcModel: IFCModel) => {
+    (event: MouseEvent, ifcModel: any) => {
       const mouse = new Vector2();
 
       const bounds = canvasRef.current?.getBoundingClientRect();
@@ -50,7 +50,7 @@ export const Scene = ({ canvasRef }: SceneProps) =>  {
       }
       state.raycaster.setFromCamera(mouse, state.camera);
 
-      return state.raycaster.intersectObject<IFCModel>(ifcModel);
+      return state.raycaster.intersectObject<any>(ifcModel);
     },
     [canvasRef, state.camera, state.raycaster]
   );
