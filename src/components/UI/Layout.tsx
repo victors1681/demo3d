@@ -95,7 +95,7 @@ export const Dashboard: React.FC<{children: React.ReactNode}> = ({ children }) =
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{display:"flex"}}>
         <CssBaseline />
         <AppBar position="absolute" open={open} elevation={0}>
           <Toolbar
